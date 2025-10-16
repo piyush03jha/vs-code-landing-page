@@ -69,10 +69,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
  }
-
 
 #header h1{
     color: #e6eefa;
@@ -155,4 +152,63 @@ nav ul li a:hover{
 #play-button:hover{
     border: 2px solid white;
     transition: all .2s ease-in-out;
+}
+
+#grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px 100px;
+    margin-top: 40px;
+    color: #aab5c5;
+}
+
+.section{
+    height: 500px;
+    width: auto;
+    border: 1px solid #31393f;
+    background-color: #161a20;
+    border-radius: 5px;
+}
+
+.section h4{
+    padding: 20px;
+}
+.section p{
+    padding: 0 20px;
+}
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px
+
+}
+
+.row2{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 170px;
+    background: linear-gradient(45deg,#5f885f 10%,#323a7e 18%,#0d1117 40%,#0d1117 75%,#323a7e 90%,#407793 100%)
+}
+#try-free{
+    background-color: #161a20;
+    border-style: none;
+    color: #aab5c5;
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid #e6eefa;
+    border-radius: 5px;
+}
+#try-free:hover{
+    background-color: #32353a;
+    transition: all .2s ease-in-out;
+}
+
+.col23{
+    grid-column: 2/4;
 }
